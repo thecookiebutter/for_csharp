@@ -1,0 +1,28 @@
+using System;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main()
+        {
+            // Variável
+            int num;
+
+            // Saída solicitando a entrada do usuário
+            Console.Write("Digite um número inteiro positivo: ");
+
+            // Entrada do usuário
+            num = int.Parse(Console.ReadLine());
+
+            // Saída explicando o resultado
+            Console.Write("Os primeiros " + num + " números pares são: ");
+
+            // Cálculo do resultado, realizando iterações até que o número de iterações alcance o número de números pares equivalente à entrada do usuário
+            for (int i = 2; i <= num * 2; i += 2)
+            {
+                Console.Write(i + " ");
+            }
+        }
+    }
+}
