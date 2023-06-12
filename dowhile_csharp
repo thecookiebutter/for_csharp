@@ -1,0 +1,29 @@
+using System;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main()
+        {
+            // Variável
+            int num;
+
+            // O programa executa o código enquanto o número não está entre 1 e 10
+            do
+            {
+                // Saída solicitando a entrada do usuário
+                Console.Write("Digite um número entre 1 e 10: ");
+
+                // Entrada do usuário
+                num = int.Parse(Console.ReadLine());
+
+                // Enquanto o número não está entre 1 e 10, repete o código acima
+            } while (num < 1 || num > 10);
+
+            // Saída mostrando o input válido do usuário
+            Console.WriteLine("Você digitou o número " + num + ".");
+
+        }
+    }
+}
