@@ -6,8 +6,8 @@ namespace Course
     {
         static void Main()
         {
-            // Variável
-            int num;
+            // Variáveis
+            int num, i = 1;
 
             // Saída solicitando a entrada do usuário
             Console.Write("Digite um número inteiro positivo: ");
@@ -15,14 +15,14 @@ namespace Course
             // Entrada do usuário
             num = int.Parse(Console.ReadLine());
 
-            // Saída explicando o resultado
-            Console.Write("Os primeiros " + num + " números pares são: ");
-
-            // Cálculo do resultado, realizando iterações até que o número de iterações alcance o número de números pares equivalente à entrada do usuário
-            for (int i = 2; i <= num * 2; i += 2)
+            // Enquanto o número de iterações for menor ou igual ao número informado pelo usuário, execute a função
+            while (i <= num)
             {
-                Console.Write(i + " ");
+                Console.WriteLine(i);
+                // Aumenta o número de iterações
+                i++;
             }
+
         }
     }
 }
